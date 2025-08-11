@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADU TATOO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <style>
+    /* Styling for the reellist section */
+        .reellist {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Individual video styling */
+        .reellist video {
+            width: 300px; /* Set the width */
+            height: auto;
+            border: 2px solid #ffd700; /* Add a border to the video */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+            transition: transform 0.3s ease; /* Add hover transition */
+        }
+
+        /* Hover effect for videos */
+        .reellist video:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+    </style>
+</head>
+ <body bgcolor="black">
+    
+        <section class="Header">
+            <nav>
+                <a href="Home Page.html"><img src="image/logo.jpg"width="90cm"height="100Cm"></a><h1><font color="ffffff">MADU TATOOS</font></h1>
+                <!--Navigation bar section-->
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="Homepage.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="gallery.html">GALLERY</a></li>
+                            <li><a href="contat.html">CONTACT US</a></li>
+                              <li><a href="apoinment.html">APPOINMENT</a></li>
+                            <li><a href="review.html">REVIEWS</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </section>
+<br>
+<br>
+<div class="reellist">
+    <video width="640" height="360" controls autoplay loop muted poster="path/to/poster.jpg">
+        <source src="imeges/v1.mp4" type="video/mp4">
+        <source src="path/to/video.ogg" type="video/ogg">
+    </video>
+     <video width="640" height="360" controls autoplay loop muted poster="path/to/poster.jpg">
+        <source src="imeges/v2 (1).mp4" type="video/mp4">
+        <source src="path/to/video.ogg" type="video/ogg">
+    </video>
+      
+     <video width="640" height="360" controls autoplay loop muted poster="path/to/poster.jpg">
+        <source src="imeges/v3.mp4" type="video/mp4">
+        <source src="path/to/video.ogg" type="video/ogg">
+    </video>
+    
+    <script>
+        // Select all video elements in the reellist section
+        const videos = document.querySelectorAll('.reellist video');
+
+        // Add event listeners to play video on hover and pause on mouse leave
+        videos.forEach(video => {
+            video.addEventListener('mouseenter', () => {
+                video.play();
+            });
+            video.addEventListener('mouseleave', () => {
+                video.pause();
+            });
+        });
+    </script>
+   
+</div>
+<div id="imageModal" class="modal" onclick="closeImage()">
+    <span class="close" onclick="closeImage()">&times;</span>
+    <img class="modal-content" id="fullImage">
+</div>
+<center><section id="commissions" class="commissions-section">
+    <a href="gallery.html" class="cta-button">Back</a>
+    </section></center>
+     <!-- Footer -->
+              <br>
+              <center>
+                  <footer>
+                       <a href="Home Page.html"><img src="image/logo.jpg"width="90cm"height="90Cm"></a>
+                       <br><br><center><font align="justify" size="3rem" color="white"> Ready To Get Tattooed?. Contact Us Today.</font></center>
+                       <br>
+                      
+                     <img src="image/fb.png" width="50cm">
+                     <img src="image/i1-removebg-preview.png" width="50cm">
+                     <img src="image/w1-removebg-preview.png" width="50cm">
+                  </footer>
+              </center>
+      </section>
+      <br>
+      <br>
+  
+  
+  </body>
+  </html>

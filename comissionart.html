@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADU TATOO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+    <body bgcolor="black">
+    
+        <section class="Header">
+            <nav>
+                <a href="Home Page.html"><img src="image/logo.jpg"width="90cm"height="100Cm"></a><h1><font color="ffffff">MADU TATOOS</font></h1>
+                <!--Navigation bar section-->
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="Homepage.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="gallery.html">GALLERY</a></li>
+                            <li><a href="contat.html">CONTACT US</a></li>
+                             <li><a href="apoinment.html">APPOINMENT</a></li>
+                            <li><a href="review.html">REVIEWS</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </section>
+<br>
+<br>
+<div class="commissionartlist">
+    <img src="imeges/w1.jpg" alt=""onclick="openImage(this)">
+    <img src="imeges/w10.jpg" alt=""onclick="openImage(this)">
+    <img src="imeges/w11.jpg"alt=""onclick="openImage(this)">
+    <img src="imeges/w12.jpg"alt=""onclick="openImage(this)">
+    <img src="imeges/w2.jpg" alt=""onclick="openImage(this)"> 
+    <img src="imeges/w3.jpg" alt=""onclick="openImage(this)">
+    <img src="imeges/w4.jpg" alt=""onclick="openImage(this)">
+    <img src="imeges/w5.jpg" alt=""onclick="openImage(this)">
+    <img src="imeges/w6.jpg" alt=""onclick="openImage(this)">
+    <img src="imeges/w7.jpg" alt=""onclick="openImage(this)">
+    <img src="imeges/w8.jpg" alt=""onclick="openImage(this)">
+    <img src="imeges/w9.jpg" alt=""onclick="openImage(this)">
+    <img src="imeges/w13.jpg" alt=""onclick="openImage(this)">
+    <img src="imeges/w14.jpg" alt=""onclick="openImage(this)">
+    <img src="imeges/w15.jpg" alt=""onclick="openImage(this)">
+   
+   
+</div>
+<div id="imageModal" class="modal" onclick="closeImage()">
+    <span class="close" onclick="closeImage()">&times;</span>
+    <img class="modal-content" id="fullImage">
+</div>
+<!-- JavaScript code at the end of the body -->
+<script>
+    function openImage(imgElement) {
+        const modal = document.getElementById("imageModal");
+        const fullImage = document.getElementById("fullImage");
+
+        fullImage.src = imgElement.src; // Set the clicked image as the modal content
+        modal.style.display = "flex"; // Show the modal
+    }
+
+    function closeImage() {
+        const modal = document.getElementById("imageModal");
+        modal.style.display = "none"; // Hide the modal
+    }
+</script>
+<section id="commissions" class="commissions-section">
+    <a href="gallery.html" class="cta-button">Back</a>
+    </section>
+
+  <!-- Footer -->
+              <br>
+              <center>
+                  <footer>
+                       <a href="Home Page.html"><img src="image/logo.jpg"width="90cm"height="90Cm"></a>
+                       <br><br><center><font align="justify" size="3rem" color="white"> Ready To Get Tattooed?. Contact Us Today.</font></center>
+                       <br>
+                      
+                     <img src="image/fb.png" width="50cm">
+                     <img src="image/i1-removebg-preview.png" width="50cm">
+                     <img src="image/w1-removebg-preview.png" width="50cm">
+                  </footer>
+              </center>
+      </section>
+      <br>
+      <br>
+  
+  
+  </body>
+  </html>
